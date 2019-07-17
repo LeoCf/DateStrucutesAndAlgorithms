@@ -1,0 +1,33 @@
+package udemy.structures.arrayQueue;
+
+import udemy.structures.Employee;
+
+//FIFO first in, first out
+public class ArrayQueue {
+
+	private Employee[] queue;
+	private int front;
+	private int back;
+	       
+	public ArrayQueue(int capcity) {
+		queue = new Employee[capcity];
+	}
+	
+	public void add(Employee employee) {
+		if(back== queue.length) {
+			Employee[] newArray = new Employee[2* queue.length];
+			System.arraycopy(queue, 0, newArray, 0, queue.length);
+			queue = newArray;
+		}
+		queue[back]= employee;
+		back++;
+		
+	}
+	
+	public void remove() {
+		//
+	}
+	
+	
+	
+}
