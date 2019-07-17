@@ -1,5 +1,8 @@
 package udemy.structures.arrayQueue;
 
+import java.security.NoSuchAlgorithmException;
+import java.util.NoSuchElementException;
+
 import udemy.structures.Employee;
 
 //FIFO first in, first out
@@ -24,10 +27,30 @@ public class ArrayQueue {
 		
 	}
 	
-	public void remove() {
-		//
+	public Employee remove() {
+		if(size()==0) {
+			throw new NoSuchElementException();
+		}
+		Employee employee = queue[front];
+		queue[front] = null;
+		front++;
+		if(size()==0) {
+			front = 0;
+			back = 0;
+		}
+		return employee;
 	}
 	
+	public Employee peek() {
+		if(size()==0) {
+			throw new NoSuchElementException();
+		}
+		return queue[front];
+	}
+	
+	public int size() {
+		return back-front;
+	}
 	
 	
 }
