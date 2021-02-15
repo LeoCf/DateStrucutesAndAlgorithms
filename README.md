@@ -1,4 +1,6 @@
 # DateStrucutesAndAlgorithms
-Data Strucutres e Algorithms
+Data Structures and Algorithms
 
-Repository for Udemy Course   https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java/
+Repository for Udemy Course Data Structures and Algorithms (yes the repository name is misspelled)  
+
+https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java/
